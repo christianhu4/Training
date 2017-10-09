@@ -1,0 +1,353 @@
+
+> "Hello World !!"
+[1] "Hello World !!"
+> a="pommes"
+> a
+[1] "pommes"
+> a
+[1] "pommes"
+> b=chatr("oemsp", "eol H",a)
+Fehler in chatr("oemsp", "eol H", a) : 
+  konnte Funktion "chatr" nicht finden
+> > b=chartr("oemsp", "eol H",a)
+Fehler: Unerwartete(s) '>' in ">"
+> 
+> > b=chartr("oemsp", "eol H",a)
+Fehler: Unerwartete(s) '>' in ">"
+> 
+> c=unlist
+> b=chartr("oemsp", "eol H",a)
+> 
+> b=chartr("oemsp", "eol H",a)
+> 
+> b
+[1] "Hello "
+> a="pommes frites"
+> a
+[1] "pommes frites"
+> b=chartr("oemsp", "eol H",a)
+> 
+> b
+[1] "Hello  frito "
+> c=unlist(strsplit(b," "))[c(1,3)];c
+[1] "Hello"
+> d=as.numeric(charToRaw(c[2]));d
+[1] 78 65
+> e=rawToChar(as.raw(d+c(17,-3,9,-8,-11)));e
+Warnmeldung:
+In d + c(17, -3, 9, -8, -11) : Länge des längeren Objektes
+ 	 ist kein Vielfaches der Länge des kürzeren Objektes
+[1] "_>W9C"
+> a="pommes frites";a
+[1] "pommes frites"
+> b=chartr("oemsp", "eol H",a)
+> 
+> b
+[1] "Hello  frito "
+> c=unlist(strsplit(b,""))[c(1,3)];c
+[1] "H" "l"
+> c=unlist(strsplit(b, " "))[c(1,3)];c
+[1] "Hello" "frito"
+> d=as.numeric(charToRaw(c[2]));d
+[1] 102 114 105 116 111
+> e=rawToChar(as.raw(d + c(17, -3, 9, -8, -11)));e
+[1] "world"
+> f=paste(c[1],e,"!!!");f
+[1] "Hello world !!!"
+> help(chartr)
+> library()
+> ?strsplit
+> ?charToRaw
+> setwd("/Users/christianhager/Dropbox/00 pdf Studium VWL")
+> getwd
+function () 
+.Internal(getwd())
+<bytecode: 0x103779840>
+<environment: namespace:base>
+> getwd()
+[1] "/Users/christianhager/Dropbox/00 pdf Studium VWL"
+> setwd("/Users/christianhager/Dropbox/00 pdf Studium VWL/04 R")
+> get()
+Fehler in get() : Argument "x" fehlt (ohne Standardwert)
+> getwd()
+[1] "/Users/christianhager/Dropbox/00 pdf Studium VWL/04 R"
+> load("FSE_LSE.RData")
+Fehler in readChar(con, 5L, useBytes = TRUE) : 
+  kann Verbindung nicht öffnen
+Zusätzlich: Warnmeldung:
+In readChar(con, 5L, useBytes = TRUE) :
+  kann komprimierte Datei 'FSE_LSE.RData' nicht öffnen. Grund evtl. 'No such file or directory'
+> load("FSE_LSE.dat")
+Fehler in load("FSE_LSE.dat") : 
+  unbrauchbare Restore Datei magic number (Datei evtl. beschädigt) -- keine Daten geladen
+Zusätzlich: Warnmeldung:
+file ‘FSE_LSE.dat’ has magic number ''
+  Use of save versions prior to 2 is deprecated 
+> load(FSE_LSE.dat)
+Fehler in load(FSE_LSE.dat) : Objekt 'FSE_LSE.dat' nicht gefunden
+> load("FSE_LSE.dat")
+Fehler in load("FSE_LSE.dat") : 
+  unbrauchbare Restore Datei magic number (Datei evtl. beschädigt) -- keine Daten geladen
+Zusätzlich: Warnmeldung:
+file ‘FSE_LSE.dat’ has magic number ''
+  Use of save versions prior to 2 is deprecated 
+> DS=read.table(FSE_LSE.dat"")
+Fehler: unerwartete Zeichenkettenkonstante in "DS=read.table(FSE_LSE.dat"""
+> DS=read.table("FSE_LSE.dat")
+Fehler in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  Zeile 1 hatte keine 3 Elemente
+> DS = read.table("FSE_LSE.dat")
+Fehler in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  Zeile 1 hatte keine 3 Elemente
+> DS= read.table("FSE_LSE.dat")
+Fehler in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  Zeile 1 hatte keine 3 Elemente
+> DS=read.table("FSE_LSE.dat")
+Fehler in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  Zeile 1 hatte keine 3 Elemente
+> getwd()
+[1] "/Users/christianhager/Dropbox/00 pdf Studium VWL/04 R"
+> DS=read.table("FSE_LSE.dat")
+Fehler in scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  : 
+  Zeile 1 hatte keine 3 Elemente
+> save.image("FSE_LSE3.RData)
++ 
++ load("FSE_LSE3.RData")
+Fehler: unerwartetes Symbol in:
+"
+load("FSE_LSE3.RData"
+> ?chartr
+> ?unlist
+> ?strsplit
+> DS=read.table("FSE_LSE.dat")
+> save.image("FSE_LSE3.RData)
++ load("FSE_LSE3.RData")
+Fehler: unerwartetes Symbol in:
+"save.image("FSE_LSE3.RData)
+load("FSE_LSE3.RData"
+> save.image("FSE_LSE3.RData")
+> load("FSE_LSE3.RData")
+> sink("FSE_LSE3.RData")
+> savehistory("exe1_history.Rhistory")
+> 100*50+50
+> =100*50+50
+Fehler: Unerwartete(s) '=' in "="
+> ==100*50+50
+Fehler: Unerwartete(s) '==' in "=="
+> ==100*49+50
+Fehler: Unerwartete(s) '==' in "=="
+> 2*2=
++ =
+Fehler: Unerwartete(s) '=' in:
+"2*2=
+="
+> ="100*49+50"
+Fehler: Unerwartete(s) '=' in "="
+> n = 100
+> nsum = n*(n+1)/2
+> nsum
+> rm(list=ls())
+> ls()
+> q
+> DS = read.table("FSE_LSE.dat")
+> is.numeric(DS)
+> is.numeric(S)
+Fehler: Objekt 'S' nicht gefunden
+> a=3
+> b=2
+> c(a,b)
+> c=c(a,b)
+> a=1:3
+> a
+> d=(rep(1,5)
++ d=(rep(1,5))
+Fehler: unerwartetes Symbol in:
+"d=(rep(1,5)
+d"
+> ?paste
+> a="slumdog"
+> b="millionaire"
+> paste(a, " " ,b)
+> paste(a,b, sep=" ", collapse = NULL)
+> paste0(a,b,collapse)
+Fehler in paste0(a, b, collapse) : Objekt 'collapse' nicht gefunden
+> paste(a,b,collapse)
+Fehler in paste(a, b, collapse) : Objekt 'collapse' nicht gefunden
+> paste(a,b,collapse=",")
+> paste("1st", "2nd", "3rd", collapse = ", ")
+> c(a,b)
+> paste(c(a,b))
+> c
+> c=(a,b)
+Fehler: Unerwartete(s) ',' in "c=(a,"
+> c=a,b
+Fehler: Unerwartete(s) ',' in "c=a,"
+> ?c
+> a=(1,3,5,7)
+Fehler: Unerwartete(s) ',' in "a=(1,"
+> c(1,3,5,7)
+> d=c(1,3,5,7)
+> d
+> ?c
+> a
+> a
+> a
+> 
+
+> a
+> a = "slumdog"
+> a
+> sink()
+> a
+[1] "slumdog"
+> c = c(a,b)
+> c
+[1] "slumdog"     "millionaire"
+> a
+[1] "slumdog"
+> sink()
+Warnmeldung:
+In sink() : kein sink zu entfernen
+> a
+[1] "slumdog"
+> sink()
+Warnmeldung:
+In sink() : kein sink zu entfernen
+> a
+[1] "slumdog"
+> b
+[1] "millionaire"
+> d=c(a,b)
+> d
+[1] "slumdog"     "millionaire"
+> paste(d)
+[1] "slumdog"     "millionaire"
+> paste(d,collapse)
+Fehler in paste(d, collapse) : Objekt 'collapse' nicht gefunden
+> paste(c(a, ",", b))
+[1] "slumdog"     ","           "millionaire"
+> paste(c(a,",",b))
+[1] "slumdog"     ","           "millionaire"
+> print a
+Fehler: unerwartetes Symbol in "print a"
+> print d
+Fehler: unerwartetes Symbol in "print d"
+>  e=(seq(1,19,2))
+> e
+ [1]  1  3  5  7  9 11 13 15 17 19
+> e=(seq(2,18,2))
+> e
+[1]  2  4  6  8 10 12 14 16 18
+> e=e[,-5]
+Fehler in e[, -5] : falsche Anzahl von Dimensionen
+> b=matrix(rep(2,8)^n))
+Fehler: Unerwartete(s) ')' in "b=matrix(rep(2,8)^n))"
+> n=1:8
+> b=matrix(rep(2,8)^n, ncol=1)
+> b
+     [,1]
+[1,]    2
+[2,]    4
+[3,]    8
+[4,]   16
+[5,]   32
+[6,]   64
+[7,]  128
+[8,]  256
+> n=c(1:8)
+> n
+[1] 1 2 3 4 5 6 7 8
+> b=matrix(2^n, ncol=1)
+> b
+     [,1]
+[1,]    2
+[2,]    4
+[3,]    8
+[4,]   16
+[5,]   32
+[6,]   64
+[7,]  128
+[8,]  256
+> b=2^n
+> b
+[1]   2   4   8  16  32  64 128 256
+> b=t(b)
+> b
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    2    4    8   16   32   64  128  256
+> n=t(n)
+> n
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    1    2    3    4    5    6    7    8
+> c=n^2; n
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    1    2    3    4    5    6    7    8
+> c
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    1    4    9   16   25   36   49   64
+> which(b==c)
+[1] 2 4
+> M.c=cbind(b,c)
+> M.c
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12] [,13]
+[1,]    2    4    8   16   32   64  128  256    1     4     9    16    25
+     [,14] [,15] [,16]
+[1,]    36    49    64
+> M.c=rbind(b,c)
+> M.c
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    2    4    8   16   32   64  128  256
+[2,]    1    4    9   16   25   36   49   64
+> dim(M.c)
+[1] 2 8
+> M.c=matrix(b,c,nrow=8)
+> M.c=matrix(c(b,c), nrow=8)
+> M.c
+     [,1] [,2]
+[1,]    2    1
+[2,]    4    4
+[3,]    8    9
+[4,]   16   16
+[5,]   32   25
+[6,]   64   36
+[7,]  128   49
+[8,]  256   64
+> a
+[1] "slumdog"
+> b
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    2    4    8   16   32   64  128  256
+> c
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    1    4    9   16   25   36   49   64
+> n
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    1    2    3    4    5    6    7    8
+> d
+[1] "slumdog"     "millionaire"
+> e
+[1]  2  4  6  8 10 12 14 16 18
+> rownames(M.r)=letters[1:2]
+Fehler in rownames(M.r) = letters[1:2] : Objekt 'M.r' nicht gefunden
+> a=(seq(1:19,2))
+Fehler in seq.default(1:19, 2) : 'from' muss Länge 1 haben
+> a=(seq(1,19,2))
+> a
+ [1]  1  3  5  7  9 11 13 15 17 19
+> a=[,-5]
+Fehler: Unerwartete(s) '[' in "a=["
+> lenght(a)
+Fehler in lenght(a) : konnte Funktion "lenght" nicht finden
+> length(a)
+[1] 10
+> a = t(a)
+> a=[,-5]
+Fehler: Unerwartete(s) '[' in "a=["
+> a = matrix(a, row = 1)
+Fehler in matrix(a, row = 1) : unbenutztes Argument (row = 1)
+> a = matrix(a, col = 1)
+Fehler in matrix(a, col = 1) : unbenutztes Argument (col = 1)
+> a[,-5]
+[1]  1  3  5  7 11 13 15 17 19
+> savehistory("exe1_history.Rhistory")
+> 
